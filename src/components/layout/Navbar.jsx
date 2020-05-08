@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm navbar-light bg-light">
-      <a href="#" className="navbar-brand">
-        Quiz app
+      <i className="fa fa-shopping-cart" aria-hidden="true"></i>{" "}
+      <a href="#" className="navbar-brand ml-2">
+        Hamro Shop
       </a>
       <button
         className="navbar-toggler"
@@ -17,13 +18,23 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarMenu">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link to="/" className="m-2 text-decoration-none">
-              Quiz
+            <Link to="/" className="m-2 text-decoration-none black">
+              Home
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/setting" className="m-2 text-decoration-none">
-              Setting
+            <Link to="/shop" className="m-2 text-decoration-none black">
+              Shop
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/cart" className="m-2 text-decoration-none black">
+              Cart
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about" className="m-2 text-decoration-none black">
+              About
             </Link>
           </li>
         </ul>
