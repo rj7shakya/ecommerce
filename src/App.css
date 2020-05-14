@@ -2,9 +2,22 @@
   color: black;
 }
 
-.carousel-control-next {
-  left: 50%;
+a {
+  color: white;
+  text-decoration: none;
 }
-.carousel-control-prev {
-  left: -6%;
+
+a:hover {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cara-container {
+  /* width: 20rem; */
+  height: 60vh;
+}
+
+.flex-container {
+  display: flex;
 }

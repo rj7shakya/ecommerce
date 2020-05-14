@@ -16,14 +16,14 @@ function App() {
   return (
     <Router>
       <Switch>
-        <React.Fragment>
+        <div className="container-fluid">
           <Navbar />
           <Route exact path="/" component={Home} />
           <Route exact path="/shop" component={Shop} />
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/about" component={About} />
           <Redirect to="/" />
-        </React.Fragment>
+        </div>
       </Switch>
     </Router>
   );

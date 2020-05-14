@@ -4,22 +4,30 @@ const Carasoul = () => {
   return (
     <React.Fragment>
       <div id="demo" className="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div className="carousel-inner ">
           <div className="carousel-item active">
             <img
-              src="https://demo.oxygentheme.com/minimal/wp-content/uploads/2015/04/image1xxl-420x540.jpg"
+              className="w-100  "
+              src="https://picsum.photos/1700/601"
               alt="First slide"
             />
+            <div className="carousel-caption d-none d-md-block">
+              <h4>
+                <a href="#">Shop Now</a>
+              </h4>
+            </div>
           </div>
           <div className="carousel-item ">
             <img
-              src="https://demo.oxygentheme.com/minimal/wp-content/uploads/2015/04/image4xxl-420x540.jpg"
+              className="w-100 "
+              src="https://picsum.photos/1700/600"
               alt="Second slide"
             />
           </div>
           <div className="carousel-item">
             <img
-              src="https://demo.oxygentheme.com/minimal/wp-content/uploads/2015/04/image3xxl-420x540.jpg"
+              className="w-100 "
+              src="https://picsum.photos/1700/599"
               alt="Third slide"
             />
           </div>
