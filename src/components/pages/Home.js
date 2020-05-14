@@ -8,7 +8,7 @@ export default class Home extends Component {
       <React.Fragment>
         <Carasoul />
         <div className="py-5 text-center display-4">Featured products</div>
-        <div className="flex-contaner">
+        <div className="flex-contaner row">
           <Item />
           <Item />
           <Item />

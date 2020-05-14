@@ -20,4 +20,11 @@ a:hover {
 
 .flex-container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  /* width: 33.33%; */
+  flex: 3;
 }
