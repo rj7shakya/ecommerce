@@ -1,11 +1,11 @@
-import React from "react";
-import "./App.css";
-import Homepage from "./pages/homepage/homepage";
-import { Switch, Route } from "react-router-dom";
-import ShopPage from "./pages/shop/shop";
-import Header from "./components/header/header";
-import SignInSignUp from "./components/signin-and-signup/signin-signup";
-import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+import React from 'react';
+import './App.css';
+import Homepage from './pages/homepage/homepage';
+import { Switch, Route } from 'react-router-dom';
+import ShopPage from './pages/shop/shop';
+import Header from './components/header/header';
+import SignInSignUp from './components/signin-and-signup/signin-signup';
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
 class App extends React.Component {
   constructor() {
@@ -39,6 +39,7 @@ class App extends React.Component {
         this.setState({ currentUser: userAuth });
       }
     });
+    console.log(this.state.currentUser);
   }
 
   componentWillUnmount() {
