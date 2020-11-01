@@ -1,6 +1,6 @@
-import React from "react";
-import "./collection-preview.scss";
-import CollectionItem from "../collection-item/collection-item";
+import React from 'react';
+import './collection-preview.scss';
+import CollectionItem from '../collection-item/collection-item';
 
 export default function CollectionPreview({ title, items }) {
   return (
@@ -9,8 +9,8 @@ export default function CollectionPreview({ title, items }) {
       <div className="preview">
         {items
           .filter((item, id) => id < 4)
-          .map(({ id, ...otherProps }) => (
-            <CollectionItem key={id} {...otherProps} />
+          .map((item) => (
+            <CollectionItem key={item.id} item={item} />
           ))}
       </div>
     </div>

@@ -1,16 +1,16 @@
-import firebase from "firebase/app";
-import "firebase/firestore";
-import "firebase/auth";
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
 
 const config = {
-  apiKey: "AIzaSyDDxJvMuWuIOwYZcmz3slSkLbO6ac7OlJo",
-  authDomain: "crwn-db-8f089.firebaseapp.com",
-  databaseURL: "https://crwn-db-8f089.firebaseio.com",
-  projectId: "crwn-db-8f089",
-  storageBucket: "crwn-db-8f089.appspot.com",
-  messagingSenderId: "839546479414",
-  appId: "1:839546479414:web:0629c8dbc2e5f7b67ec997",
-  measurementId: "G-S6P2VL951N",
+  apiKey: 'AIzaSyBLecahtCmHIr5Pfk08JEPjuhGBGLHjMaY',
+  authDomain: 'crwn-db2-f3bdf.firebaseapp.com',
+  databaseURL: 'https://crwn-db2-f3bdf.firebaseio.com',
+  projectId: 'crwn-db2-f3bdf',
+  storageBucket: 'crwn-db2-f3bdf.appspot.com',
+  messagingSenderId: '473014135677',
+  appId: '1:473014135677:web:73753eb27912e0be58ba14',
+  measurementId: 'G-CH3CQKLHE6',
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
@@ -38,7 +38,7 @@ export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
 const provider = new firebase.auth.GoogleAuthProvider();
-provider.setCustomParameters({ prompt: "select_account" });
+provider.setCustomParameters({ prompt: 'select_account' });
 
 export const signInWithGoogle = () => auth.signInWithPopup(provider);
 
